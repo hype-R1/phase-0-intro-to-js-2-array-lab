@@ -1,4 +1,4 @@
-# Arrays Lab
+npm test# Arrays Lab
 
 ## Learning Goals
 
