@@ -1,38 +1,104 @@
 const cats = ["Milo", "Otis", "Garfield"];
 
-function destructivelyAppendCat() {
-    cats.push("Ralph");
-}
+let destructivelyAppendCat = (ralph) =>  cats.push(ralph);
 
-function destructivelyPrependCat(magic) { 
-    cats.unshift(magic);
-}
+const destructivelyPrependCat = () => cats.unshift();
 
-function destructivelyRemoveLastCat(anyWord) {
-    cats.slice(anyWord)
-}
+let destructivelyRemoveLastCat = () => cats.pop();
+
+let destructivelyRemoveFirstCat = (first) => cats.shift(first);
 
 
 
-function destructivelyRemoveLastCat() {
-    cats.splice(2)
-}
+let appendCat = (name) =>  [...cats,name];
 
-function destructivelyRemoveFirstCat() {
-    cats.splice(0,1)
-}
 
-function appendCat(words) {
-    return [...cats, words];
-}
+const prependCat = (name) => [name, ...cats];
 
-function prependCat(magic) {
-    return [magic, ...cats]
-}
-function removeFirstCat () {
-    return cats.slice(1)
-}
+let removeFirstCat = (name) => cats.slice(1);
 
-function removeLastCat () {
-    return cats.slice(0, cats.length - 1);
-}
+let removeLastCat = () => cats.slice(0, cats.length - 1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const cats = ["Milo", "Otis", "Garfield"];
+
+// function destructivelyAppendCat() {
+//     cats.push("Ralph");
+// }
+
+// function destructivelyPrependCat(magic) { 
+//     cats.unshift(magic);
+// }
+
+// function destructivelyRemoveLastCat(anyWord) {
+//     cats.slice(anyWord)
+// }
+
+
+
+// function destructivelyRemoveLastCat() {
+//     cats.splice(2)
+// }
+
+// function destructivelyRemoveFirstCat() {
+//     cats.splice(0,1)
+// }
+
+// function appendCat(words) {
+//     return [...cats, words];
+// }
+
+// function prependCat(magic) {
+//     return [magic, ...cats]
+// }
+// function removeFirstCat () {
+//     return cats.slice(1)
+// }
+
+// function removeLastCat () {
+//     return cats.slice(0, cats.length - 1);
+// }
